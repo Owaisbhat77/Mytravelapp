@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light;
+}
+
+body {
+  @apply bg-pearl text-sable font-body;
+}
+
+.gradient-overlay {
+  background: linear-gradient(120deg, rgba(11, 17, 32, 0.85), rgba(17, 24, 39, 0.4));
+}
+
+.section-spacing {
+  @apply py-16 md:py-24;
+}
