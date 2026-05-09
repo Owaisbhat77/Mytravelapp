@@ -7,8 +7,8 @@ export default function ContactPage() {
       <div className="mx-auto max-w-5xl px-6">
         <SectionTitle
           eyebrow="Contact"
-          title="Begin your bespoke Kashmir experience."
-          subtitle="Share your travel dates and preferences, and we will respond within 24 hours."
+          title="Let’s plan your Kashmir journey."
+          subtitle="We respond quickly with itinerary ideas, pricing, and travel advice."
         />
         <div className="mt-12 grid gap-8 md:grid-cols-[1.1fr_0.9fr]">
           <form className="rounded-3xl bg-white p-8 shadow-soft">
@@ -40,18 +40,19 @@ export default function ContactPage() {
             </Button>
           </form>
           <div className="rounded-3xl bg-slate-900 p-8 text-white">
-            <h3 className="font-display text-xl">Concierge desk</h3>
+            <h3 className="font-display text-xl">Contact options</h3>
             <p className="mt-4 text-sm text-slate-300">
-              Personalised itinerary design, luxury stays, private transfers, and 24/7 support.
+              Reach us by phone, WhatsApp, or email and we will respond quickly.
             </p>
             <div className="mt-6 space-y-3 text-sm">
-              <p>📞 +91 90123 45678</p>
-              <p>✉️ concierge@adveluxjourneys.com</p>
-              <p>📍 Residency Road, Srinagar, Kashmir</p>
+              <p>📞 6005721569</p>
+              <p>✉️ owaissbhatt7@gmail.com</p>
+              <p>💬 WhatsApp: +91 6005721569</p>
+              <p>📍 Srinagar, Kashmir</p>
             </div>
             <div className="mt-8 rounded-2xl bg-white/10 p-4 text-sm">
               <p className="font-semibold text-emerald-200">Operating hours</p>
-              <p className="mt-2 text-slate-300">Mon–Sat · 9:00 AM – 8:00 PM</p>
+              <p className="mt-2 text-slate-300">Mon–Sun · 9:00 AM – 9:00 PM</p>
             </div>
           </div>
         </div>

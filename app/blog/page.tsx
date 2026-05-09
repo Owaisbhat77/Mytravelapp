@@ -4,16 +4,16 @@ import Link from "next/link";
 
 export default function BlogPage() {
   return (
-    <section className="section-spacing bg-slate-50">
+    <section className="section-spacing bg-white">
       <div className="mx-auto max-w-6xl px-6">
         <SectionTitle
-          eyebrow="Journal"
-          title="Travel stories, guides, and seasonal inspiration."
-          subtitle="Our editorial team shares insider tips and curated itineraries."
+          eyebrow="Travel blogs"
+          title="Guides, seasonal highlights, and local secrets."
+          subtitle="Every story is written to help you plan a smoother, more beautiful journey."
         />
         <div className="mt-12 grid gap-6 md:grid-cols-3">
           {blogPosts.map((post) => (
-            <article key={post.slug} className="rounded-3xl bg-white p-6 shadow-soft">
+            <article key={post.slug} className="hover-lift rounded-3xl bg-slate-50 p-6">
               <p className="text-xs uppercase tracking-[0.3em] text-emerald-500">{post.date}</p>
               <h3 className="mt-4 font-display text-xl text-slate-900">{post.title}</h3>
               <p className="mt-3 text-sm text-slate-600">{post.excerpt}</p>

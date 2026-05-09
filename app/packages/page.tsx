@@ -9,11 +9,11 @@ export default function PackagesPage() {
         <SectionTitle
           eyebrow="Packages"
           title="Premium itineraries designed for couples, families, and executive groups."
-          subtitle="Each package can be customised with additional nights, upgrades, and special moments."
+          subtitle="Each package can be customised with extra nights, upgrades, and special moments."
         />
         <div className="mt-12 grid gap-8 md:grid-cols-3">
           {packages.map((item) => (
-            <div key={item.title} className="rounded-3xl bg-white p-8 shadow-soft">
+            <div key={item.title} className="hover-lift rounded-3xl bg-white p-8 shadow-soft">
               <p className="text-xs uppercase tracking-[0.3em] text-emerald-500">{item.nights}</p>
               <h3 className="mt-4 font-display text-2xl text-slate-900">{item.title}</h3>
               <p className="mt-3 text-sm text-slate-600">{item.summary}</p>

@@ -6,6 +6,10 @@
   color-scheme: light;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   @apply bg-slate-50 text-slate-900 font-body antialiased;
 }
@@ -20,6 +24,17 @@ body {
 
 .glass-panel {
   @apply bg-white/70 backdrop-blur border border-white/60 shadow-soft;
+}
+
+.magic-title {
+  background: linear-gradient(120deg, #0f172a 10%, #14b8a6 55%, #38bdf8 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.hover-lift {
+  @apply transition duration-300 hover:-translate-y-1 hover:shadow-soft;
 }
 
 ::-webkit-scrollbar {
