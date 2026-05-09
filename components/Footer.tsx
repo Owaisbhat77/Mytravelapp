@@ -10,7 +10,7 @@ export default function Footer() {
           <div className="flex items-center gap-3">
             <Logo />
             <div>
-              <p className="text-sm font-semibold text-slate-900">Discover Kashmir</p>
+              <p className="text-sm font-semibold text-slate-900">Advelux Journeys</p>
               <p className="text-[10px] uppercase tracking-[0.3em] text-emerald-500">Modern travel studio</p>
             </div>
           </div>
@@ -58,7 +58,7 @@ export default function Footer() {
         </div>
       </div>
       <div className="border-t border-slate-100 py-4 text-center text-xs text-slate-500">
-        © 2026 Discover Kashmir. All rights reserved.
+        © 2026 Advelux Journeys. All rights reserved.
       </div>
     </footer>
   );

@@ -3,30 +3,18 @@
 import Link from "next/link";
 import { useState } from "react";
 import Logo from "./Logo";
-import { mainNavigation, policyLinks } from "../lib/site-data";
+import { mainNavigation } from "../lib/site-data";
 
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
     <header className="sticky top-0 z-50 border-b border-white/60 bg-white/90 backdrop-blur">
-      <div className="border-b border-slate-100 bg-slate-50">
-        <div className="mx-auto flex max-w-6xl flex-wrap items-center justify-between gap-4 px-6 py-2 text-xs text-slate-600">
-          <span className="font-semibold uppercase tracking-[0.2em] text-slate-900">Customer Policies</span>
-          <div className="flex flex-wrap gap-4">
-            {policyLinks.map((link) => (
-              <Link key={link.href} href={link.href} className="transition hover:text-slate-900">
-                {link.label}
-              </Link>
-            ))}
-          </div>
-        </div>
-      </div>
       <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
         <Link href="/" className="flex items-center gap-3">
           <Logo />
           <div>
-            <p className="text-sm font-semibold text-slate-900">Discover Kashmir</p>
+            <p className="text-sm font-semibold text-slate-900">Advelux Journeys</p>
             <p className="text-[10px] uppercase tracking-[0.3em] text-emerald-500">Premium travel studio</p>
           </div>
         </Link>

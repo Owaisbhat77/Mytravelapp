@@ -28,14 +28,13 @@ export default function Home() {
         <div className="relative z-10 mx-auto flex h-full max-w-6xl flex-col justify-center gap-8 px-6 text-white">
           <div className="space-y-4">
             <p className="text-xs uppercase tracking-[0.45em] text-emerald-200">
-              Premium Kashmir journeys
+              Advelux Journeys · Kashmir
             </p>
             <h1 className="max-w-3xl font-display text-4xl font-semibold leading-tight md:text-6xl">
-              <span className="magic-title">Discover Kashmir</span> with handcrafted itineraries and concierge care.
+              <span className="magic-title">Advelux Journeys</span> crafts modern Kashmir escapes that feel like magic.
             </h1>
             <p className="max-w-2xl text-lg text-slate-200">
-              We design modern, immersive travel experiences across Kashmir with luxury stays, curated adventures, and
-              24/7 on-ground support.
+              We design immersive travel experiences with luxury stays, curated adventures, and 24/7 concierge care.
             </p>
           </div>
           <div className="flex flex-wrap gap-4">
@@ -55,6 +54,15 @@ export default function Home() {
         </div>
       </section>
 
+      <div className="wave-divider">
+        <svg viewBox="0 0 1440 120" xmlns="http://www.w3.org/2000/svg">
+          <path
+            fill="#f8fafc"
+            d="M0,64L80,69.3C160,75,320,85,480,90.7C640,96,800,96,960,90.7C1120,85,1280,75,1360,69.3L1440,64L1440,120L1360,120C1280,120,1120,120,960,120C800,120,640,120,480,120C320,120,160,120,80,120L0,120Z"
+          />
+        </svg>
+      </div>
+
       <section className="section-spacing bg-white">
         <div className="mx-auto max-w-6xl px-6">
           <SectionTitle
@@ -67,7 +75,7 @@ export default function Home() {
               <Link
                 key={item.title}
                 href={item.href}
-                className="hover-lift rounded-3xl border border-slate-100 bg-slate-50 p-8"
+                className="hover-lift water-card p-8"
               >
                 <h3 className="font-display text-2xl text-slate-900">{item.title}</h3>
                 <p className="mt-3 text-sm text-slate-600">{item.description}</p>
@@ -77,7 +85,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="section-spacing bg-slate-50" id="destinations">
+      <section className="section-spacing water-sheen" id="destinations">
         <div className="mx-auto max-w-6xl px-6">
           <SectionTitle
             eyebrow="Destinations"
@@ -117,7 +125,7 @@ export default function Home() {
           />
           <div className="mt-12 grid gap-8 md:grid-cols-3">
             {packages.map((item) => (
-              <div key={item.title} className="hover-lift rounded-3xl border border-slate-100 bg-white p-8 shadow-soft">
+              <div key={item.title} className="hover-lift water-card p-8">
                 <p className="text-xs uppercase tracking-[0.3em] text-emerald-500">{item.nights}</p>
                 <h3 className="mt-4 font-display text-2xl text-slate-900">{item.title}</h3>
                 <p className="mt-3 text-sm text-slate-600">{item.summary}</p>
@@ -158,7 +166,7 @@ export default function Home() {
           />
           <div className="mt-12 grid gap-6 md:grid-cols-3">
             {blogPosts.map((post) => (
-              <Link key={post.slug} href={`/blog/${post.slug}`} className="hover-lift rounded-3xl bg-slate-50 p-6">
+              <Link key={post.slug} href={`/blog/${post.slug}`} className="hover-lift water-card p-6">
                 <p className="text-xs uppercase tracking-[0.3em] text-emerald-500">{post.date}</p>
                 <h3 className="mt-4 font-display text-xl text-slate-900">{post.title}</h3>
                 <p className="mt-3 text-sm text-slate-600">{post.excerpt}</p>
@@ -169,7 +177,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="section-spacing bg-slate-50" id="contact">
+      <section className="section-spacing water-sheen" id="contact">
         <div className="mx-auto grid max-w-6xl gap-10 px-6 md:grid-cols-[1.1fr_0.9fr]">
           <div>
             <SectionTitle
@@ -184,7 +192,7 @@ export default function Home() {
               </Button>
             </div>
           </div>
-          <div className="rounded-3xl bg-white p-8 shadow-soft">
+          <div className="water-card p-8">
             <h3 className="font-display text-2xl text-slate-900">Contact options</h3>
             <div className="mt-6 space-y-3 text-sm text-slate-600">
               <p>📞 6005721569</p>

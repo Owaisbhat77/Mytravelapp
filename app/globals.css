@@ -37,6 +37,20 @@ body {
   @apply transition duration-300 hover:-translate-y-1 hover:shadow-soft;
 }
 
+.water-sheen {
+  background: radial-gradient(circle at top, rgba(94, 234, 212, 0.25), transparent 55%),
+    linear-gradient(120deg, rgba(59, 130, 246, 0.08), rgba(56, 189, 248, 0.12));
+}
+
+.water-card {
+  @apply rounded-3xl bg-white/80 backdrop-blur border border-white/60 shadow-soft;
+}
+
+.wave-divider svg {
+  display: block;
+  width: 100%;
+}
+
 ::-webkit-scrollbar {
   height: 8px;
   width: 8px;
