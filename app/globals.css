@@ -7,13 +7,17 @@
 }
 
 body {
-  @apply bg-pearl text-sable font-body;
+  @apply bg-slate-50 text-slate-900 font-body antialiased;
 }
 
 .gradient-overlay {
-  background: linear-gradient(120deg, rgba(11, 17, 32, 0.85), rgba(17, 24, 39, 0.4));
+  background: linear-gradient(120deg, rgba(7, 12, 24, 0.9), rgba(12, 74, 110, 0.35));
 }
 
 .section-spacing {
   @apply py-16 md:py-24;
+}
+
+.glass-panel {
+  @apply bg-white/70 backdrop-blur border border-white/60 shadow-soft;
 }

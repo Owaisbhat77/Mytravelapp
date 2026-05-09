@@ -1,80 +1,53 @@
 import Image from "next/image";
 import Link from "next/link";
+import {
+  destinations,
+  experiences,
+  packages,
+  stats,
+  testimonials,
+} from "../lib/site-data";
 import SectionTitle from "../components/SectionTitle";
-
-const highlights = [
-  {
-    title: "Luxury Houseboats",
-    description: "Wake up on Dal Lake with handcrafted interiors and private butler service.",
-  },
-  {
-    title: "Bespoke Itineraries",
-    description: "From alpine meadows to heritage trails, every journey is tailored for you.",
-  },
-  {
-    title: "Trusted Local Experts",
-    description: "Curated by on-ground travel designers who know Kashmir intimately.",
-  },
-];
-
-const signatureTrips = [
-  {
-    title: "Signature Kashmir Escape",
-    nights: "6 Nights / 7 Days",
-    price: "From ₹48,000",
-    image:
-      "https://images.unsplash.com/photo-1501785888041-af3ef285b470?auto=format&fit=crop&w=1200&q=80",
-  },
-  {
-    title: "Gulmarg Alpine Luxury",
-    nights: "4 Nights / 5 Days",
-    price: "From ₹38,500",
-    image:
-      "https://images.unsplash.com/photo-1469474968028-56623f02e42e?auto=format&fit=crop&w=1200&q=80",
-  },
-  {
-    title: "Pahalgam Riverside Retreat",
-    nights: "5 Nights / 6 Days",
-    price: "From ₹41,000",
-    image:
-      "https://images.unsplash.com/photo-1519681393784-d120267933ba?auto=format&fit=crop&w=1200&q=80",
-  },
-];
+import Button from "../components/Button";
 
 export default function Home() {
   return (
     <div>
-      <section className="relative h-[85vh] min-h-[520px]">
+      <section className="relative h-[90vh] min-h-[640px]">
         <Image
-          src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1600&q=80"
+          src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1800&q=80"
           alt="Kashmir valley"
           fill
           className="object-cover"
           priority
         />
         <div className="absolute inset-0 gradient-overlay" />
-        <div className="relative z-10 mx-auto flex h-full max-w-6xl flex-col justify-center px-6 text-white">
-          <p className="text-sm uppercase tracking-[0.4em] text-aurora">Advelux Journeys</p>
-          <h1 className="mt-6 max-w-3xl font-display text-4xl font-semibold leading-tight md:text-6xl">
-            Curated premium travel experiences across the timeless beauty of Kashmir.
-          </h1>
-          <p className="mt-6 max-w-2xl text-lg text-slate-200">
-            Discover luxury stays, private transfers, and immersive cultural moments designed around your pace and
-            preferences.
-          </p>
-          <div className="mt-10 flex flex-wrap gap-4">
-            <Link
-              href="/packages"
-              className="rounded-full bg-aurora px-8 py-3 text-sm font-semibold text-sable shadow-soft"
-            >
-              View Packages
-            </Link>
-            <Link
-              href="/contact"
-              className="rounded-full border border-white/60 px-8 py-3 text-sm font-semibold text-white"
-            >
-              Plan My Trip
-            </Link>
+        <div className="relative z-10 mx-auto flex h-full max-w-6xl flex-col justify-center gap-8 px-6 text-white">
+          <div className="space-y-4">
+            <p className="text-xs uppercase tracking-[0.45em] text-emerald-200">
+              Luxury travel studio · Kashmir
+            </p>
+            <h1 className="max-w-3xl font-display text-4xl font-semibold leading-tight md:text-6xl">
+              Bespoke journeys through the Himalayan heartland.
+            </h1>
+            <p className="max-w-2xl text-lg text-slate-200">
+              Advelux Journeys curates premium travel experiences with private transfers, luxury stays, and handcrafted
+              itineraries designed around your pace and passions.
+            </p>
+          </div>
+          <div className="flex flex-wrap gap-4">
+            <Button href="/packages">Explore packages</Button>
+            <Button href="/contact" variant="outline">
+              Request a proposal
+            </Button>
+          </div>
+          <div className="grid gap-6 pt-6 md:grid-cols-3">
+            {stats.map((stat) => (
+              <div key={stat.label} className="glass-panel rounded-3xl p-6">
+                <p className="text-3xl font-semibold text-slate-900">{stat.value}</p>
+                <p className="mt-2 text-sm text-slate-600">{stat.label}</p>
+              </div>
+            ))}
           </div>
         </div>
       </section>
@@ -83,12 +56,13 @@ export default function Home() {
         <div className="mx-auto max-w-6xl px-6">
           <SectionTitle
             eyebrow="Why Advelux"
-            title="Travel with confidence, comfort, and a dedicated concierge."
+            title="A premium concierge team for Kashmir's most extraordinary escapes."
+            subtitle="We handle everything from luxury stays to on-ground hosts, so you travel with total ease."
           />
           <div className="mt-12 grid gap-6 md:grid-cols-3">
-            {highlights.map((item) => (
-              <div key={item.title} className="rounded-3xl border border-slate-100 bg-pearl p-8 shadow-soft">
-                <h3 className="font-display text-2xl text-midnight">{item.title}</h3>
+            {experiences.slice(0, 3).map((item) => (
+              <div key={item.title} className="rounded-3xl border border-slate-100 bg-slate-50 p-8 shadow-soft">
+                <h3 className="font-display text-2xl text-slate-900">{item.title}</h3>
                 <p className="mt-3 text-sm text-slate-600">{item.description}</p>
               </div>
             ))}
@@ -99,58 +73,94 @@ export default function Home() {
       <section className="section-spacing bg-slate-50">
         <div className="mx-auto max-w-6xl px-6">
           <SectionTitle
-            eyebrow="Signature Journeys"
-            title="Handpicked itineraries that blend luxury, culture, and adventure."
+            eyebrow="Destinations"
+            title="Lakefront serenity, alpine peaks, and heritage villages."
           />
-          <div className="mt-12 grid gap-8 md:grid-cols-3">
-            {signatureTrips.map((trip) => (
-              <div key={trip.title} className="overflow-hidden rounded-3xl bg-white shadow-soft">
-                <div className="relative h-56">
-                  <Image src={trip.image} alt={trip.title} fill className="object-cover" />
-                </div>
-                <div className="p-6">
-                  <h3 className="font-display text-xl text-midnight">{trip.title}</h3>
-                  <p className="mt-2 text-sm text-slate-500">{trip.nights}</p>
-                  <p className="mt-4 text-lg font-semibold text-slate-900">{trip.price}</p>
-                  <Link href="/contact" className="mt-6 inline-flex text-sm font-semibold text-aurora">
-                    Enquire now →
-                  </Link>
-                </div>
+          <div className="mt-12 grid gap-6 md:grid-cols-2">
+            {destinations.map((destination) => (
+              <div key={destination.name} className="rounded-3xl bg-white p-8 shadow-soft">
+                <h3 className="font-display text-2xl text-slate-900">{destination.name}</h3>
+                <p className="mt-3 text-sm text-slate-600">{destination.description}</p>
+                <ul className="mt-4 space-y-2 text-sm text-slate-500">
+                  {destination.highlights.map((highlight) => (
+                    <li key={highlight}>• {highlight}</li>
+                  ))}
+                </ul>
               </div>
             ))}
           </div>
         </div>
       </section>
 
-      <section className="section-spacing bg-midnight text-white">
-        <div className="mx-auto grid max-w-6xl gap-10 px-6 md:grid-cols-[1.2fr_1fr]">
+      <section className="section-spacing bg-white">
+        <div className="mx-auto max-w-6xl px-6">
+          <SectionTitle
+            eyebrow="Signature Packages"
+            title="Curated itineraries with luxury stays and immersive experiences."
+          />
+          <div className="mt-12 grid gap-8 md:grid-cols-3">
+            {packages.map((item) => (
+              <div key={item.title} className="rounded-3xl border border-slate-100 bg-white p-8 shadow-soft">
+                <p className="text-xs uppercase tracking-[0.3em] text-emerald-500">{item.nights}</p>
+                <h3 className="mt-4 font-display text-2xl text-slate-900">{item.title}</h3>
+                <p className="mt-3 text-sm text-slate-600">{item.summary}</p>
+                <ul className="mt-6 space-y-2 text-sm text-slate-500">
+                  {item.highlights.map((highlight) => (
+                    <li key={highlight}>• {highlight}</li>
+                  ))}
+                </ul>
+                <div className="mt-6 text-lg font-semibold text-slate-900">{item.price}</div>
+                <Button href="/contact" className="mt-6 w-full">
+                  Plan this trip
+                </Button>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="section-spacing bg-slate-900 text-white">
+        <div className="mx-auto max-w-6xl px-6">
+          <SectionTitle
+            eyebrow="Client stories"
+            title="Every journey leaves a lasting memory."
+            subtitle="From honeymooners to corporate retreats, we deliver exceptional service."
+            light
+          />
+          <div className="mt-12 grid gap-6 md:grid-cols-3">
+            {testimonials.map((testimonial) => (
+              <div key={testimonial.name} className="rounded-3xl bg-white/10 p-8">
+                <p className="text-sm text-slate-200">“{testimonial.quote}”</p>
+                <p className="mt-6 text-sm font-semibold">{testimonial.name}</p>
+                <p className="text-xs text-emerald-200">{testimonial.trip}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="section-spacing bg-white">
+        <div className="mx-auto grid max-w-6xl gap-10 px-6 md:grid-cols-[1.1fr_0.9fr]">
           <div>
             <SectionTitle
-              eyebrow="Concierge Service"
-              title="Every journey is personally designed for you."
-              light
+              eyebrow="Concierge"
+              title="Tell us your dream itinerary. We’ll craft the rest."
+              subtitle="Receive a premium proposal within 24 hours including stays, routes, and experiences."
             />
-            <p className="mt-6 text-slate-200">
-              Share your preferred travel dates, group size, and dream experiences. Our concierge team will craft a
-              premium itinerary within 24 hours.
-            </p>
             <div className="mt-8 flex flex-wrap gap-4">
-              <Link href="/contact" className="rounded-full bg-white px-6 py-3 text-sm font-semibold text-midnight">
-                Request a proposal
-              </Link>
-              <Link href="/about" className="rounded-full border border-white/40 px-6 py-3 text-sm font-semibold">
-                Learn more
-              </Link>
+              <Button href="/contact">Start planning</Button>
+              <Button href="/about" variant="ghost">
+                Meet the team
+              </Button>
             </div>
           </div>
-          <div className="rounded-3xl bg-white/10 p-6">
-            <h3 className="font-display text-xl">Quick Facts</h3>
-            <ul className="mt-6 space-y-4 text-sm text-slate-200">
-              <li>✔ Private airport transfers with premium vehicles.</li>
-              <li>✔ Curated culinary experiences with local chefs.</li>
-              <li>✔ 24/7 concierge assistance during your stay.</li>
-              <li>✔ Flexible itineraries for families, couples, and groups.</li>
-            </ul>
+          <div className="rounded-3xl bg-slate-50 p-8 shadow-soft">
+            <h3 className="font-display text-2xl text-slate-900">Planning snapshot</h3>
+            <ol className="mt-6 space-y-4 text-sm text-slate-600">
+              <li>1. Share your dates, group size, and interests.</li>
+              <li>2. Receive a curated itinerary with stays.</li>
+              <li>3. Confirm, and we manage everything end-to-end.</li>
+            </ol>
           </div>
         </div>
       </section>

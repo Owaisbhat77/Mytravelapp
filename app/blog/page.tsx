@@ -1,34 +1,25 @@
 import SectionTitle from "../../components/SectionTitle";
-
-const posts = [
-  {
-    title: "A Luxury Guide to Kashmir's Houseboats",
-    date: "April 5, 2026",
-    excerpt: "Sail through Dal Lake in style with our curated list of premium houseboat stays.",
-  },
-  {
-    title: "Top 5 Winter Experiences in Gulmarg",
-    date: "March 21, 2026",
-    excerpt: "Snow safaris, gondola rides, and cozy evenings with panoramic views.",
-  },
-  {
-    title: "Cultural Trails of Srinagar",
-    date: "February 11, 2026",
-    excerpt: "Explore heritage bazaars, craft ateliers, and hidden culinary gems.",
-  },
-];
+import { blogPosts } from "../../lib/site-data";
+import Link from "next/link";
 
 export default function BlogPage() {
   return (
     <section className="section-spacing bg-slate-50">
-      <div className="mx-auto max-w-5xl px-6">
-        <SectionTitle eyebrow="Journal" title="Stories, guides, and travel inspiration." />
+      <div className="mx-auto max-w-6xl px-6">
+        <SectionTitle
+          eyebrow="Journal"
+          title="Travel stories, guides, and seasonal inspiration."
+          subtitle="Our editorial team shares insider tips and curated itineraries."
+        />
         <div className="mt-12 grid gap-6 md:grid-cols-3">
-          {posts.map((post) => (
-            <article key={post.title} className="rounded-3xl bg-white p-6 shadow-soft">
-              <p className="text-xs uppercase tracking-[0.3em] text-aurora">{post.date}</p>
-              <h3 className="mt-4 font-display text-xl text-midnight">{post.title}</h3>
+          {blogPosts.map((post) => (
+            <article key={post.slug} className="rounded-3xl bg-white p-6 shadow-soft">
+              <p className="text-xs uppercase tracking-[0.3em] text-emerald-500">{post.date}</p>
+              <h3 className="mt-4 font-display text-xl text-slate-900">{post.title}</h3>
               <p className="mt-3 text-sm text-slate-600">{post.excerpt}</p>
+              <Link href={`/blog/${post.slug}`} className="mt-6 inline-flex text-sm font-semibold text-emerald-600">
+                Read story →
+              </Link>
             </article>
           ))}
         </div>

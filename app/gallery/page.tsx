@@ -1,24 +1,20 @@
-import Image from "next/image";
 import SectionTitle from "../../components/SectionTitle";
-
-const gallery = [
-  "https://images.unsplash.com/photo-1470770841072-f978cf4d019e?auto=format&fit=crop&w=1200&q=80",
-  "https://images.unsplash.com/photo-1489515217757-5fd1be406fef?auto=format&fit=crop&w=1200&q=80",
-  "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?auto=format&fit=crop&w=1200&q=80",
-  "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1200&q=80",
-  "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=1200&q=80",
-  "https://images.unsplash.com/photo-1459666644539-a9755287d6b0?auto=format&fit=crop&w=1200&q=80",
-];
+import { gallery } from "../../lib/site-data";
+import Image from "next/image";
 
 export default function GalleryPage() {
   return (
-    <section className="section-spacing">
-      <div className="mx-auto max-w-5xl px-6">
-        <SectionTitle eyebrow="Gallery" title="Moments from our most loved journeys." />
+    <section className="section-spacing bg-white">
+      <div className="mx-auto max-w-6xl px-6">
+        <SectionTitle
+          eyebrow="Gallery"
+          title="Signature moments from our curated journeys."
+          subtitle="A glimpse into the landscapes, stays, and culture of Kashmir."
+        />
         <div className="mt-12 grid gap-4 md:grid-cols-3">
           {gallery.map((image) => (
             <div key={image} className="relative h-56 overflow-hidden rounded-3xl">
-              <Image src={image} alt="Travel moment" fill className="object-cover" />
+              <Image src={image} alt="Kashmir moment" fill className="object-cover" />
             </div>
           ))}
         </div>
