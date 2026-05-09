@@ -17,6 +17,9 @@ export default function Footer() {
           <p className="mt-4 text-sm text-slate-600">
             Premium Kashmir travel planning with curated stays, concierge service, and unforgettable experiences.
           </p>
+          <Link href="/brochure.pdf" className="mt-4 inline-flex text-sm font-semibold text-emerald-600">
+            Download brochure →
+          </Link>
         </div>
         <div>
           <h4 className="text-sm font-semibold text-slate-900">Navigation</h4>

@@ -6,6 +6,8 @@ export const navigation = [
   { href: "/stays", label: "Luxury stays" },
   { href: "/gallery", label: "Gallery" },
   { href: "/blog", label: "Journal" },
+  { href: "/team", label: "Team" },
+  { href: "/pricing", label: "Pricing" },
   { href: "/faqs", label: "FAQs" },
 ];
 
@@ -160,6 +162,10 @@ export const faqs = [
     question: "Is concierge support available during the trip?",
     answer: "Our on-ground team is available 24/7 to support you throughout your journey.",
   },
+  {
+    question: "Can you arrange corporate retreats?",
+    answer: "Yes. We design end-to-end corporate retreats including venues, team-building, and logistics.",
+  },
 ];
 
 export const blogPosts = [
@@ -208,4 +214,76 @@ export const gallery = [
   "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1200&q=80",
   "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=1200&q=80",
   "https://images.unsplash.com/photo-1459666644539-a9755287d6b0?auto=format&fit=crop&w=1200&q=80",
+];
+
+export const pricingPlans = [
+  {
+    name: "Essential",
+    price: "₹18,000",
+    description: "Curated itinerary, premium stays, and airport transfers.",
+    features: ["Custom itinerary", "4-star stays", "Airport transfers", "Local concierge"],
+  },
+  {
+    name: "Signature",
+    price: "₹32,000",
+    description: "Luxury stays, private guides, and exclusive experiences.",
+    features: ["5-star stays", "Private guide", "Luxury transport", "Personalised dining"],
+    highlight: true,
+  },
+  {
+    name: "Elite",
+    price: "₹55,000",
+    description: "Ultra-luxury with private hosts and helicopter add-ons.",
+    features: ["Heritage suite", "Private host", "Heli transfers", "24/7 concierge"],
+  },
+];
+
+export const teamMembers = [
+  {
+    name: "Zara Qureshi",
+    role: "Founder & Concierge Director",
+    bio: "Leads luxury planning with a decade of hospitality experience and a passion for Kashmir.",
+    speciality: "Bespoke honeymoon itineraries",
+  },
+  {
+    name: "Aarav Kaul",
+    role: "Destination Curator",
+    bio: "Designs immersive routes, seasonal experiences, and heritage trails.",
+    speciality: "Adventure + culture journeys",
+  },
+  {
+    name: "Meher Nazir",
+    role: "Guest Experience Lead",
+    bio: "Ensures flawless on-ground execution with 24/7 concierge support.",
+    speciality: "Luxury stays & concierge care",
+  },
+  {
+    name: "Kabir Wani",
+    role: "Partnerships Manager",
+    bio: "Works with boutique hotels and heritage houseboats across Kashmir.",
+    speciality: "Hotel partnerships",
+  },
+  {
+    name: "Sana Habib",
+    role: "Travel Designer",
+    bio: "Curates family-friendly and wellness-first itineraries.",
+    speciality: "Wellness travel",
+  },
+  {
+    name: "Ibrahim Shah",
+    role: "Operations Lead",
+    bio: "Manages logistics, transport, and guest coordination.",
+    speciality: "Luxury logistics",
+  },
+];
+
+export const instagramFeed = [
+  "https://images.unsplash.com/photo-1470770841072-f978cf4d019e?auto=format&fit=crop&w=1200&q=80",
+  "https://images.unsplash.com/photo-1489515217757-5fd1be406fef?auto=format&fit=crop&w=1200&q=80",
+  "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1200&q=80",
+  "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=1200&q=80",
+  "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?auto=format&fit=crop&w=1200&q=80",
+  "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1200&q=80",
+  "https://images.unsplash.com/photo-1459666644539-a9755287d6b0?auto=format&fit=crop&w=1200&q=80",
+  "https://images.unsplash.com/photo-1469474968028-56623f02e42e?auto=format&fit=crop&w=1200&q=80",
 ];

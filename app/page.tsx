@@ -6,9 +6,18 @@ import {
   packages,
   stats,
   testimonials,
+  pricingPlans,
+  teamMembers,
+  instagramFeed,
+  faqs,
 } from "../lib/site-data";
 import SectionTitle from "../components/SectionTitle";
 import Button from "../components/Button";
+import ReviewsSlider from "../components/ReviewsSlider";
+import PricingTable from "../components/PricingTable";
+import FAQAccordion from "../components/FAQAccordion";
+import InstagramGrid from "../components/InstagramGrid";
+import NewsletterForm from "../components/NewsletterForm";
 
 export default function Home() {
   return (
@@ -37,8 +46,8 @@ export default function Home() {
           </div>
           <div className="flex flex-wrap gap-4">
             <Button href="/packages">Explore packages</Button>
-            <Button href="/contact" variant="outline">
-              Request a proposal
+            <Button href="/itinerary" variant="outline">
+              Build itinerary
             </Button>
           </div>
           <div className="grid gap-6 pt-6 md:grid-cols-3">
@@ -110,8 +119,8 @@ export default function Home() {
                   ))}
                 </ul>
                 <div className="mt-6 text-lg font-semibold text-slate-900">{item.price}</div>
-                <Button href="/contact" className="mt-6 w-full">
-                  Plan this trip
+                <Button href="/booking" className="mt-6 w-full">
+                  Request booking
                 </Button>
               </div>
             ))}
@@ -127,19 +136,63 @@ export default function Home() {
             subtitle="From honeymooners to corporate retreats, we deliver exceptional service."
             light
           />
-          <div className="mt-12 grid gap-6 md:grid-cols-3">
-            {testimonials.map((testimonial) => (
-              <div key={testimonial.name} className="rounded-3xl bg-white/10 p-8">
-                <p className="text-sm text-slate-200">“{testimonial.quote}”</p>
-                <p className="mt-6 text-sm font-semibold">{testimonial.name}</p>
-                <p className="text-xs text-emerald-200">{testimonial.trip}</p>
-              </div>
-            ))}
+          <div className="mt-12">
+            <ReviewsSlider testimonials={testimonials} />
           </div>
         </div>
       </section>
 
       <section className="section-spacing bg-white">
+        <div className="mx-auto max-w-6xl px-6">
+          <SectionTitle eyebrow="Pricing" title="Transparent pricing for premium travel planning." />
+          <div className="mt-12">
+            <PricingTable plans={pricingPlans} />
+          </div>
+          <div className="mt-10 flex flex-wrap gap-4">
+            <Button href="/pricing">View full pricing</Button>
+            <Button href="/brochure.pdf" variant="ghost">
+              Download brochure
+            </Button>
+          </div>
+        </div>
+      </section>
+
+      <section className="section-spacing bg-slate-50">
+        <div className="mx-auto max-w-6xl px-6">
+          <SectionTitle
+            eyebrow="Meet the team"
+            title="Local experts with global hospitality standards."
+          />
+          <div className="mt-12 grid gap-6 md:grid-cols-3">
+            {teamMembers.slice(0, 3).map((member) => (
+              <div key={member.name} className="rounded-3xl bg-white p-8 shadow-soft">
+                <p className="text-xs uppercase tracking-[0.3em] text-emerald-500">{member.role}</p>
+                <h3 className="mt-4 font-display text-2xl text-slate-900">{member.name}</h3>
+                <p className="mt-3 text-sm text-slate-600">{member.bio}</p>
+              </div>
+            ))}
+          </div>
+          <div className="mt-10">
+            <Button href="/team" variant="ghost">
+              View full team
+            </Button>
+          </div>
+        </div>
+      </section>
+
+      <section className="section-spacing bg-white">
+        <div className="mx-auto max-w-6xl px-6">
+          <SectionTitle
+            eyebrow="Instagram"
+            title="Follow our latest journeys and behind-the-scenes stories."
+          />
+          <div className="mt-12">
+            <InstagramGrid images={instagramFeed} />
+          </div>
+        </div>
+      </section>
+
+      <section className="section-spacing bg-slate-50">
         <div className="mx-auto grid max-w-6xl gap-10 px-6 md:grid-cols-[1.1fr_0.9fr]">
           <div>
             <SectionTitle
@@ -148,9 +201,9 @@ export default function Home() {
               subtitle="Receive a premium proposal within 24 hours including stays, routes, and experiences."
             />
             <div className="mt-8 flex flex-wrap gap-4">
-              <Button href="/contact">Start planning</Button>
-              <Button href="/about" variant="ghost">
-                Meet the team
+              <Button href="/itinerary">Start itinerary builder</Button>
+              <Button href="/contact" variant="ghost">
+                Request a call
               </Button>
             </div>
           </div>
@@ -161,6 +214,33 @@ export default function Home() {
               <li>2. Receive a curated itinerary with stays.</li>
               <li>3. Confirm, and we manage everything end-to-end.</li>
             </ol>
+          </div>
+        </div>
+      </section>
+
+      <section className="section-spacing bg-white">
+        <div className="mx-auto max-w-4xl px-6">
+          <SectionTitle
+            eyebrow="FAQs"
+            title="Quick answers before you book."
+            subtitle="We are happy to answer anything else in a personalised call."
+          />
+          <div className="mt-10">
+            <FAQAccordion items={faqs} />
+          </div>
+        </div>
+      </section>
+
+      <section className="section-spacing bg-slate-900 text-white">
+        <div className="mx-auto max-w-4xl px-6">
+          <SectionTitle
+            eyebrow="Newsletter"
+            title="Get seasonal updates and private offers."
+            subtitle="Join our travel journal to receive curated inspiration every month."
+            light
+          />
+          <div className="mt-8">
+            <NewsletterForm />
           </div>
         </div>
       </section>
