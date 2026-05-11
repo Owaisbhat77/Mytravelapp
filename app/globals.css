@@ -19,7 +19,7 @@ body {
 }
 
 .section-spacing {
-  @apply py-16 md:py-24;
+  @apply py-14 md:py-24;
 }
 
 .glass-panel {
@@ -42,13 +42,87 @@ body {
     linear-gradient(120deg, rgba(59, 130, 246, 0.08), rgba(56, 189, 248, 0.12));
 }
 
+.water-bg {
+  background: radial-gradient(circle at 20% 20%, rgba(56, 189, 248, 0.15), transparent 55%),
+    radial-gradient(circle at 80% 30%, rgba(94, 234, 212, 0.12), transparent 60%),
+    linear-gradient(120deg, rgba(15, 23, 42, 0.02), rgba(59, 130, 246, 0.08));
+  animation: waterFlow 14s ease-in-out infinite;
+}
+
+@keyframes waterFlow {
+  0% {
+    filter: saturate(1);
+    transform: translateY(0px);
+  }
+  50% {
+    filter: saturate(1.1);
+    transform: translateY(-6px);
+  }
+  100% {
+    filter: saturate(1);
+    transform: translateY(0px);
+  }
+}
+
 .water-card {
   @apply rounded-3xl bg-white/80 backdrop-blur border border-white/60 shadow-soft;
+  transition: transform 0.35s ease, box-shadow 0.35s ease;
+}
+
+.water-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 25px 60px rgba(15, 23, 42, 0.12);
+}
+
+.water-card:active {
+  transform: scale(0.985);
 }
 
 .wave-divider svg {
   display: block;
   width: 100%;
+}
+
+.hero-safe {
+  padding-top: 8rem;
+  padding-bottom: 5.5rem;
+}
+
+@media (max-width: 640px) {
+  .hero-safe {
+    padding-top: 7.5rem;
+    padding-bottom: 6rem;
+  }
+
+  .hero-title {
+    font-size: 2.1rem;
+    line-height: 1.25;
+  }
+
+  .hero-subtitle {
+    font-size: 0.95rem;
+    line-height: 1.6;
+  }
+}
+
+.watery-float {
+  animation: floaty 6s ease-in-out infinite;
+}
+
+.watery-float-slow {
+  animation: floaty 9s ease-in-out infinite;
+}
+
+@keyframes floaty {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
 }
 
 ::-webkit-scrollbar {

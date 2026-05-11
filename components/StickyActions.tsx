@@ -24,8 +24,8 @@ export default function StickyActions() {
         <p className="mt-1 text-xs text-slate-500">We reply in under 2 minutes.</p>
         <div className="mt-3 flex flex-col gap-2 text-xs font-semibold text-emerald-600">
           <Link href="/contact">Start chat →</Link>
-          <Link href="https://wa.me/916005721569" target="_blank">
-            WhatsApp →
+          <Link href="https://wa.me/919469761244" target="_blank" className="inline-flex items-center gap-2">
+            <span>WhatsApp →</span>
           </Link>
         </div>
       </div>

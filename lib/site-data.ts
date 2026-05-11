@@ -15,9 +15,9 @@ export const policyLinks = [
 ];
 
 export const socialLinks = [
-  { href: "https://instagram.com", label: "Instagram" },
-  { href: "https://facebook.com", label: "Facebook" },
-  { href: "https://wa.me/916005721569", label: "WhatsApp" },
+  { href: "https://www.instagram.com/adveluxjourneys_", label: "Instagram" },
+  { href: "https://www.facebook.com/share/1ARrK2fbVp/", label: "Facebook" },
+  { href: "https://wa.me/919469761244", label: "WhatsApp" },
 ];
 
 export const quickLinks = [
@@ -33,21 +33,21 @@ export const quickLinks = [
   },
   {
     title: "Destinations",
-    description: "Explore Srinagar, Gulmarg, Pahalgam, Sonamarg, and more.",
+    description: "Explore every iconic valley, meadow, lake, and heritage trail of Kashmir.",
     href: "/destinations",
   },
 ];
 
 export const stats = [
-  { value: "250+", label: "Curated Kashmir journeys" },
-  { value: "18", label: "Luxury partner stays" },
+  { value: "500+", label: "Curated Kashmir journeys" },
+  { value: "30+", label: "Luxury partner stays" },
   { value: "24/7", label: "Concierge support" },
 ];
 
 export const destinations = [
   {
     name: "Srinagar",
-    description: "Dal Lake, Mughal gardens, and heritage walks with premium stays.",
+    description: "Dal Lake, Mughal gardens, and heritage markets with premium stays.",
     highlights: ["Dal Lake houseboats", "Mughal gardens", "Old city crafts"],
     season: "April – October",
     image: "https://images.unsplash.com/photo-1470770841072-f978cf4d019e?auto=format&fit=crop&w=1600&q=80",
@@ -72,6 +72,62 @@ export const destinations = [
     highlights: ["Thajiwas Glacier", "Meadow excursions", "Luxury camps"],
     season: "May – September",
     image: "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?auto=format&fit=crop&w=1600&q=80",
+  },
+  {
+    name: "Doodhpatri",
+    description: "Lush grasslands and mountain streams with serene picnic escapes.",
+    highlights: ["Rolling meadows", "River walks", "Quiet escapes"],
+    season: "May – October",
+    image: "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=1600&q=80",
+  },
+  {
+    name: "Yusmarg",
+    description: "Wide alpine meadows surrounded by pine-covered ridges.",
+    highlights: ["Horse rides", "Valley views", "Hidden trails"],
+    season: "April – October",
+    image: "https://images.unsplash.com/photo-1459666644539-a9755287d6b0?auto=format&fit=crop&w=1600&q=80",
+  },
+  {
+    name: "Aru Valley",
+    description: "A peaceful base for trekking, trout streams, and mountain vistas.",
+    highlights: ["Trekking routes", "River walks", "Scenic stays"],
+    season: "April – October",
+    image: "https://images.unsplash.com/photo-1489515217757-5fd1be406fef?auto=format&fit=crop&w=1600&q=80",
+  },
+  {
+    name: "Betaab Valley",
+    description: "Iconic cinematic valley with lush landscapes and photography spots.",
+    highlights: ["Film-famous views", "Picnic points", "Lush scenery"],
+    season: "March – October",
+    image: "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1600&q=80",
+  },
+  {
+    name: "Dal Lake",
+    description: "Kashmir’s heart with shikara rides and luxury houseboats.",
+    highlights: ["Shikara rides", "Floating markets", "Luxury houseboats"],
+    season: "Year-round",
+    image: "https://images.unsplash.com/photo-1470770841072-f978cf4d019e?auto=format&fit=crop&w=1600&q=80",
+  },
+  {
+    name: "Nigeen Lake",
+    description: "Calmer, secluded lake experience with premium lakefront stays.",
+    highlights: ["Quiet waters", "Private stays", "Sunset cruises"],
+    season: "Year-round",
+    image: "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1600&q=80",
+  },
+  {
+    name: "Mughal Gardens",
+    description: "Shalimar, Nishat, and Chashme Shahi with regal landscapes.",
+    highlights: ["Heritage gardens", "Fountains", "Photogenic walks"],
+    season: "April – October",
+    image: "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?auto=format&fit=crop&w=1600&q=80",
+  },
+  {
+    name: "Gurez Valley",
+    description: "Remote alpine valley known for dramatic views and untouched culture.",
+    highlights: ["Offbeat stays", "Mountain vistas", "Cultural immersion"],
+    season: "June – September",
+    image: "https://images.unsplash.com/photo-1469474968028-56623f02e42e?auto=format&fit=crop&w=1600&q=80",
   },
 ];
 
@@ -157,4 +213,57 @@ export const blogPosts = [
       "This trail is ideal for travelers who love culture, storytelling, and authentic connections.",
     ],
   },
+];
+
+export const gallery = [
+  "https://images.unsplash.com/photo-1470770841072-f978cf4d019e?auto=format&fit=crop&w=1400&q=80",
+  "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1400&q=80",
+  "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?auto=format&fit=crop&w=1400&q=80",
+  "https://images.unsplash.com/photo-1489515217757-5fd1be406fef?auto=format&fit=crop&w=1400&q=80",
+  "https://images.unsplash.com/photo-1459666644539-a9755287d6b0?auto=format&fit=crop&w=1400&q=80",
+  "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=1400&q=80",
+  "https://images.unsplash.com/photo-1469474968028-56623f02e42e?auto=format&fit=crop&w=1400&q=80",
+  "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1400&q=80",
+  "https://images.unsplash.com/photo-1470770903676-69b98201ea1c?auto=format&fit=crop&w=1400&q=80",
+  "https://images.unsplash.com/photo-1472214103451-9374bd1c798e?auto=format&fit=crop&w=1400&q=80",
+  "https://images.unsplash.com/photo-1482192505345-5655af888cc4?auto=format&fit=crop&w=1400&q=80",
+  "https://images.unsplash.com/photo-1469474968028-56623f02e42e?auto=format&fit=crop&w=1400&q=80",
+  "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?auto=format&fit=crop&w=1400&q=80",
+  "https://images.unsplash.com/photo-1501785888041-af3ef285b470?auto=format&fit=crop&w=1400&q=80",
+  "https://images.unsplash.com/photo-1441716844725-09cedc13a4e7?auto=format&fit=crop&w=1400&q=80",
+  "https://images.unsplash.com/photo-1469474968028-56623f02e42e?auto=format&fit=crop&w=1400&q=80",
+  "https://images.unsplash.com/photo-1470770841072-f978cf4d019e?auto=format&fit=crop&w=1400&q=80",
+  "https://images.unsplash.com/photo-1470770903676-69b98201ea1c?auto=format&fit=crop&w=1400&q=80",
+  "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1400&q=80",
+  "https://images.unsplash.com/photo-1489515217757-5fd1be406fef?auto=format&fit=crop&w=1400&q=80",
+  "https://images.unsplash.com/photo-1459666644539-a9755287d6b0?auto=format&fit=crop&w=1400&q=80",
+  "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=1400&q=80",
+  "https://images.unsplash.com/photo-1482192505345-5655af888cc4?auto=format&fit=crop&w=1400&q=80",
+  "https://images.unsplash.com/photo-1472214103451-9374bd1c798e?auto=format&fit=crop&w=1400&q=80",
+  "https://images.unsplash.com/photo-1470770903676-69b98201ea1c?auto=format&fit=crop&w=1400&q=80",
+  "https://images.unsplash.com/photo-1501785888041-af3ef285b470?auto=format&fit=crop&w=1400&q=80",
+  "https://images.unsplash.com/photo-1441716844725-09cedc13a4e7?auto=format&fit=crop&w=1400&q=80",
+  "https://images.unsplash.com/photo-1469474968028-56623f02e42e?auto=format&fit=crop&w=1400&q=80",
+  "https://images.unsplash.com/photo-1470770841072-f978cf4d019e?auto=format&fit=crop&w=1400&q=80",
+  "https://images.unsplash.com/photo-1470770903676-69b98201ea1c?auto=format&fit=crop&w=1400&q=80",
+  "https://images.unsplash.com/photo-1482192505345-5655af888cc4?auto=format&fit=crop&w=1400&q=80",
+  "https://images.unsplash.com/photo-1472214103451-9374bd1c798e?auto=format&fit=crop&w=1400&q=80",
+  "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1400&q=80",
+  "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?auto=format&fit=crop&w=1400&q=80",
+  "https://images.unsplash.com/photo-1489515217757-5fd1be406fef?auto=format&fit=crop&w=1400&q=80",
+  "https://images.unsplash.com/photo-1459666644539-a9755287d6b0?auto=format&fit=crop&w=1400&q=80",
+  "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=1400&q=80",
+  "https://images.unsplash.com/photo-1470770841072-f978cf4d019e?auto=format&fit=crop&w=1400&q=80",
+  "https://images.unsplash.com/photo-1470770903676-69b98201ea1c?auto=format&fit=crop&w=1400&q=80",
+  "https://images.unsplash.com/photo-1472214103451-9374bd1c798e?auto=format&fit=crop&w=1400&q=80",
+  "https://images.unsplash.com/photo-1482192505345-5655af888cc4?auto=format&fit=crop&w=1400&q=80",
+  "https://images.unsplash.com/photo-1501785888041-af3ef285b470?auto=format&fit=crop&w=1400&q=80",
+  "https://images.unsplash.com/photo-1441716844725-09cedc13a4e7?auto=format&fit=crop&w=1400&q=80",
+  "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?auto=format&fit=crop&w=1400&q=80",
+  "https://images.unsplash.com/photo-1489515217757-5fd1be406fef?auto=format&fit=crop&w=1400&q=80",
+  "https://images.unsplash.com/photo-1470770841072-f978cf4d019e?auto=format&fit=crop&w=1400&q=80",
+  "https://images.unsplash.com/photo-1469474968028-56623f02e42e?auto=format&fit=crop&w=1400&q=80",
+  "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1400&q=80",
+  "https://images.unsplash.com/photo-1459666644539-a9755287d6b0?auto=format&fit=crop&w=1400&q=80",
+  "https://images.unsplash.com/photo-1472214103451-9374bd1c798e?auto=format&fit=crop&w=1400&q=80",
 ];

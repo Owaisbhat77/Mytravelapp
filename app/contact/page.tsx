@@ -3,15 +3,15 @@ import Button from "../../components/Button";
 
 export default function ContactPage() {
   return (
-    <section className="section-spacing bg-slate-50">
+    <section className="section-spacing water-bg">
       <div className="mx-auto max-w-5xl px-6">
         <SectionTitle
           eyebrow="Contact"
-          title="Let’s plan your Kashmir journey."
+          title="Let’s plan your Advelux Kashmir journey."
           subtitle="We respond quickly with itinerary ideas, pricing, and travel advice."
         />
         <div className="mt-12 grid gap-8 md:grid-cols-[1.1fr_0.9fr]">
-          <form className="rounded-3xl bg-white p-8 shadow-soft">
+          <form className="water-card p-8">
             <div className="grid gap-4 md:grid-cols-2">
               <input
                 className="rounded-2xl border border-slate-200 px-4 py-3 text-sm"
@@ -39,20 +39,20 @@ export default function ContactPage() {
               Request itinerary
             </Button>
           </form>
-          <div className="rounded-3xl bg-slate-900 p-8 text-white">
+          <div className="water-card p-8">
             <h3 className="font-display text-xl">Contact options</h3>
-            <p className="mt-4 text-sm text-slate-300">
+            <p className="mt-4 text-sm text-slate-600">
               Reach us by phone, WhatsApp, or email and we will respond quickly.
             </p>
-            <div className="mt-6 space-y-3 text-sm">
-              <p>📞 6005721569</p>
-              <p>✉️ owaissbhatt7@gmail.com</p>
-              <p>💬 WhatsApp: +91 6005721569</p>
-              <p>📍 Srinagar, Kashmir</p>
+            <div className="mt-6 space-y-3 text-sm text-slate-600">
+              <p>📞 6005947442</p>
+              <p>📞 6005968784</p>
+              <p>✉️ contact@adveluxjourneys.com</p>
+              <p>💬 WhatsApp: +91 94697 61244</p>
             </div>
-            <div className="mt-8 rounded-2xl bg-white/10 p-4 text-sm">
-              <p className="font-semibold text-emerald-200">Operating hours</p>
-              <p className="mt-2 text-slate-300">Mon–Sun · 9:00 AM – 9:00 PM</p>
+            <div className="mt-8 rounded-2xl bg-white/40 p-4 text-sm">
+              <p className="font-semibold text-emerald-700">Operating hours</p>
+              <p className="mt-2 text-slate-600">Mon–Sun · 9:00 AM – 9:00 PM</p>
             </div>
           </div>
         </div>

@@ -11,15 +11,16 @@ export default function Footer() {
             <Logo />
             <div>
               <p className="text-sm font-semibold text-slate-900">Advelux Journeys</p>
-              <p className="text-[10px] uppercase tracking-[0.3em] text-emerald-500">Modern travel studio</p>
+              <p className="text-[10px] uppercase tracking-[0.3em] text-emerald-500">Premium travel studio</p>
             </div>
           </div>
           <p className="mt-4 text-sm text-slate-600">
-            Luxury Kashmir travel planning with curated stays, concierge service, and unforgettable experiences.
+            Advelux Journeys is a premium Kashmir travel studio delivering bespoke itineraries, luxury stays, and
+            concierge-level support for every traveler.
           </p>
           <div className="mt-4 space-y-2 text-sm text-slate-600">
-            <p>📞 6005721569</p>
-            <p>✉️ owaissbhatt7@gmail.com</p>
+            <p>📞 6005947442 · 6005968784</p>
+            <p>✉️ contact@adveluxjourneys.com</p>
           </div>
         </div>
         <div>
