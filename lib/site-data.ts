@@ -131,6 +131,62 @@ export const destinations = [
   },
 ];
 
+export const experiences = [
+  {
+    title: "Private Lakefront Dinners",
+    description: "Curated tasting menus on luxury houseboats with live santoor music.",
+    idealFor: "Couples and honeymooners",
+  },
+  {
+    title: "Heritage & Craft Trails",
+    description: "Artisan ateliers, heritage bazaars, and local culinary tastings.",
+    idealFor: "Culture enthusiasts",
+  },
+  {
+    title: "Alpine Adventure Days",
+    description: "Gondola rides, guided treks, and high-altitude meadows.",
+    idealFor: "Adventure travelers",
+  },
+  {
+    title: "Wellness Escapes",
+    description: "Private yoga, spa rituals, and serene mountain retreats.",
+    idealFor: "Wellness seekers",
+  },
+  {
+    title: "Family Discovery Tours",
+    description: "Flexible sightseeing, kid-friendly stays, and curated activities.",
+    idealFor: "Families",
+  },
+  {
+    title: "Corporate Retreats",
+    description: "Executive stays with meeting spaces and team experiences.",
+    idealFor: "Corporate teams",
+  },
+];
+
+export const stays = [
+  {
+    name: "Lakeview Heritage Houseboats",
+    description: "Premium suites with handcrafted interiors and private decks.",
+    features: ["Private dining", "Personal butler", "Sunset deck"],
+  },
+  {
+    name: "Alpine Boutique Resorts",
+    description: "Luxury properties with panoramic views and concierge ski services.",
+    features: ["Ski concierge", "Heated suites", "Fine dining"],
+  },
+  {
+    name: "Riverside Forest Retreats",
+    description: "Secluded resorts surrounded by pine forests and riverside trails.",
+    features: ["Nature walks", "Fireplace suites", "Wellness spa"],
+  },
+  {
+    name: "Signature Luxury Camps",
+    description: "Glamping stays with premium amenities and private hosts.",
+    features: ["Chef on site", "Private campfires", "Guided excursions"],
+  },
+];
+
 export const packages = [
   {
     title: "Signature Kashmir Escape",
@@ -173,6 +229,90 @@ export const testimonials = [
     trip: "Corporate retreat · Gulmarg",
     quote:
       "Professional, responsive, and detail-oriented. The retreat exceeded expectations for our entire team.",
+  },
+];
+
+export const faqs = [
+  {
+    question: "How quickly will I receive my itinerary?",
+    answer: "We deliver a personalised proposal within 24 hours after your initial inquiry.",
+  },
+  {
+    question: "Can I customise the packages?",
+    answer: "Absolutely. Every itinerary can be tailored with upgrades, added nights, or special experiences.",
+  },
+  {
+    question: "Do you provide airport transfers?",
+    answer: "Yes. Private airport transfers with premium vehicles are included in all packages.",
+  },
+  {
+    question: "Is concierge support available during the trip?",
+    answer: "Our on-ground team is available 24/7 to support you throughout your journey.",
+  },
+  {
+    question: "Can you arrange corporate retreats?",
+    answer: "Yes. We design end-to-end corporate retreats including venues, team-building, and logistics.",
+  },
+];
+
+export const pricingPlans = [
+  {
+    name: "Essential",
+    price: "₹18,000",
+    description: "Curated itinerary, premium stays, and airport transfers.",
+    features: ["Custom itinerary", "4-star stays", "Airport transfers", "Local concierge"],
+  },
+  {
+    name: "Signature",
+    price: "₹32,000",
+    description: "Luxury stays, private guides, and exclusive experiences.",
+    features: ["5-star stays", "Private guide", "Luxury transport", "Personalised dining"],
+    highlight: true,
+  },
+  {
+    name: "Elite",
+    price: "₹55,000",
+    description: "Ultra-luxury with private hosts and helicopter add-ons.",
+    features: ["Heritage suite", "Private host", "Heli transfers", "24/7 concierge"],
+  },
+];
+
+export const teamMembers = [
+  {
+    name: "Zara Qureshi",
+    role: "Founder & Concierge Director",
+    bio: "Leads luxury planning with a decade of hospitality experience and a passion for Kashmir.",
+    speciality: "Bespoke honeymoon itineraries",
+  },
+  {
+    name: "Aarav Kaul",
+    role: "Destination Curator",
+    bio: "Designs immersive routes, seasonal experiences, and heritage trails.",
+    speciality: "Adventure + culture journeys",
+  },
+  {
+    name: "Meher Nazir",
+    role: "Guest Experience Lead",
+    bio: "Ensures flawless on-ground execution with 24/7 concierge support.",
+    speciality: "Luxury stays & concierge care",
+  },
+  {
+    name: "Kabir Wani",
+    role: "Partnerships Manager",
+    bio: "Works with boutique hotels and heritage houseboats across Kashmir.",
+    speciality: "Hotel partnerships",
+  },
+  {
+    name: "Sana Habib",
+    role: "Travel Designer",
+    bio: "Curates family-friendly and wellness-first itineraries.",
+    speciality: "Wellness travel",
+  },
+  {
+    name: "Ibrahim Shah",
+    role: "Operations Lead",
+    bio: "Manages logistics, transport, and guest coordination.",
+    speciality: "Luxury logistics",
   },
 ];
 
