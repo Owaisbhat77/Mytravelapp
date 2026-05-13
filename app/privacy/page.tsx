@@ -1,4 +1,5 @@
 import SectionTitle from "../../components/SectionTitle";
+import Link from "next/link";
 
 export default function PrivacyPage() {
   return (
@@ -18,7 +19,11 @@ export default function PrivacyPage() {
             your travel services.
           </p>
           <p>
-            You can request data updates or deletion by emailing owaissbhatt7@gmail.com.
+            To update or delete your data, please reach out via our {" "}
+            <Link href="/contact" className="font-semibold text-emerald-600">
+              contact page
+            </Link>
+            .
           </p>
         </div>
       </div>
